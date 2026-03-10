@@ -12,7 +12,7 @@
 ² Department of Otolaryngology–Head and Neck Surgery, Harvard Medical School, Boston, MA, USA  
 ³ Mass Eye and Ear, Mass General Brigham, Boston, MA, USA  
 
-**Companion paper (multinational validation):** [IDI-Multinational-Validation](https://github.com/alexiscollier/IDI-Multinational-Validation) *(npj Digital Medicine, 2026)*
+**Companion paper (multinational validation):** [IDI-Multinational-Validation](https://github.com/colla00/IDI-Multinational-Validation) *(npj Digital Medicine, 2026)*
 
 ---
 
@@ -83,7 +83,7 @@ To reproduce this analysis:
 ## Installation
 
 ```bash
-git clone https://github.com/alexiscollier/IDI-MIMIC-IV-Mortality.git
+git clone https://github.com/colla00/IDI-MIMIC-IV-Mortality.git
 cd IDI-MIMIC-IV-Mortality
 pip install -r requirements.txt
 ```

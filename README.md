@@ -4,15 +4,15 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
 [![DOI](https://zenodo.org/badge/1177377775.svg)](https://doi.org/10.5281/zenodo.18943865)
 
-**Paper:** Development and Validation of the Intensive Documentation Index for ICU Mortality Prediction  
-**Journal:** Journal of the American Medical Informatics Association (JAMIA), 2026  
-**Authors:** Alexis M. Collier, DHA, MHA¹ · Sophia Z. Shalhout, PhD²³  
-**Affiliations:**  
-¹ College of Health & Wellness, University of North Georgia, Dahlonega, GA, USA  
-² Department of Otolaryngology–Head and Neck Surgery, Harvard Medical School, Boston, MA, USA  
-³ Mass Eye and Ear, Mass General Brigham, Boston, MA, USA  
+**Paper:** Development and Validation of the Intensive Documentation Index for ICU Mortality Prediction
+**Journal:** Journal of the American Medical Informatics Association (JAMIA, under review, 2026)
+**Authors:** Alexis M. Collier, DHA, MHA¹ · Sophia Z. Shalhout, PhD²³
+**Affiliations:**
+¹ College of Health & Wellness, University of North Georgia, Dahlonega, GA, USA
+² Department of Otolaryngology–Head and Neck Surgery, Harvard Medical School, Boston, MA, USA
+³ Mass Eye and Ear, Mass General Brigham, Boston, MA, USA
 
-**Companion paper (multinational validation):** [IDI-Multinational-Validation](https://github.com/colla00/IDI-Multinational-Validation) *(npj Digital Medicine, 2026)*
+**Companion paper (multinational validation):** [IDI-Multinational-Validation](https://github.com/colla00/IDI-Multinational-Validation) *(Journal of Biomedical Informatics, under review, 2026)*
 
 ---
 
@@ -26,13 +26,15 @@ Applied to **26,153 heart failure ICU admissions** from MIMIC-IV (2008–2019), 
 
 ## Key Results
 
+Results reflect **temporal validation** (training: 2008–2018; test: 2019):
+
 | Model | AUROC (95% CI) | Calibration Slope | Brier Score |
 |-------|---------------|-------------------|-------------|
 | Baseline (age, sex, ICU LOS) | 0.658 (0.609–0.710) | 0.92 | 0.1091 |
 | IDI-Enhanced | **0.683 (0.631–0.732)** | **0.96** | **0.1080** |
 
-**ΔAUROC = +0.025 (p = 0.015, DeLong test)**  
-Strongest predictor: `idi_cv_interevent` OR = 1.53 per SD (95% CI 1.35–1.74, p < 0.001)  
+**ΔAUROC = +0.025 (p = 0.015, DeLong test)**
+Strongest predictor: `idi_cv_interevent` OR = 1.53 per SD (95% CI 1.35–1.74, p < 0.001)
 Temporal stability: mean AUC 0.654 (SD 0.016) across leave-one-year-out cross-validation (2008–2019)
 
 ---
@@ -149,7 +151,7 @@ If you use this code, please cite:
   author    = {Collier, Alexis M. and Shalhout, Sophia Z.},
   journal   = {Journal of the American Medical Informatics Association},
   year      = {2026},
-  doi       = {[to be assigned]}
+  note      = {Under review}
 }
 ```
 
@@ -157,17 +159,13 @@ If you use this code, please cite:
 
 ## Patent Notice
 
-The IDI framework is the subject of U.S. provisional patent applications (Patent Pending):
-- USPTO Application No. 63/976,293 — *System and Method for Predicting ICU Mortality from Electronic Health Record Documentation Rhythm Patterns* (filed February 2026)
-- USPTO Application No. 63/946,187 — *Clinical Decision Support System with Trust-Based Alert Prioritization and Equity Monitoring* (filed December 2025)
-
-VitaSignal LLC is the intended assignee. Licensing inquiries: info@vitasignal.ai
+The IDI framework is the subject of multiple U.S. provisional patent applications (Patent Pending). VitaSignal LLC is the intended assignee. Licensing inquiries: info@vitasignal.ai
 
 ---
 
 ## Funding
 
-This research was, in part, funded by the National Institutes of Health (NIH) Agreement No. 1OT2OD032581 through the AIM-AHEAD program.
+This research was, in part, funded by the National Institutes of Health through the NIH AIM-AHEAD program.
 
 ---
 
